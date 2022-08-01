@@ -12,10 +12,10 @@ GO
 -- See more:    https://docs.python.org/3/library/stdtypes.html
 -- ============================================================
 
-CREATE FUNCTION CAPITALIZE (@string AS nvarchar(4000))
+CREATE FUNCTION CAPITALIZE (@String AS nvarchar(4000))
 RETURNS nvarchar(4000)
 AS
 BEGIN
-    RETURN UPPER(LEFT(@string, 1)) + LOWER(SUBSTRING(@string, 2, 3999))
+    RETURN UPPER(LEFT(@String, 1)) + LOWER(SUBSTRING(@String, 2, 3999))
 END
 GO
